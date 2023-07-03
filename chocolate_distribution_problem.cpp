@@ -44,10 +44,9 @@ int main(){
     for(int i=0;i<n;i++){
         cin>> v[i];
     }
-    // 7, 3, 2, 4, 9, 12, 56
     int m;
     cout<< "Enter m : ";
-    cin>> m; // 3
+    cin>> m; 
     
     cout<< minDiff(v,m);
     
