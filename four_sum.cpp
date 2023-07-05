@@ -7,11 +7,11 @@ public:
 
         for(int i=0;i<n-3;i++){
             for(int l=i+1;l<n-2;l++){
-                int j=i+1;
+                int j=l+1;
                 int k=n-1;
 
                 while(j < k){
-                    int sum = nums[i]+nums[l]+nums[j]+nums[k];
+                    long long sum = static_cast<long long>(nums[i])+nums[l]+nums[j]+nums[k];
                     if(sum == target){
                         s.insert({nums[i],nums[l],nums[j],nums[k]});
                         j++;
